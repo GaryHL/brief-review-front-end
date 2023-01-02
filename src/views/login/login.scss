@@ -1,14 +1,15 @@
-.container_login{
-    >h1{
-        font-size:3rem;
-        color:white;
-        text-align: center;
-        align-self: center;
-    }
-    width:80%;
-    padding:0 10%;
-    height:100vh;
-    display:grid;
-    background-color: #333;
-    grid-template-rows:20% 80% ;
+.container_login {
+    justify-items: center;
+   > h1 {
+      font-size: 3rem;
+      color: white;
+      text-align: center;
+      align-self: center;
+   }
+   width: 80%;
+   padding: 0 10%;
+   height: 100vh;
+   display: grid;
+   background-color:#333;
+   grid-template-rows: 30% 50%;
 }
