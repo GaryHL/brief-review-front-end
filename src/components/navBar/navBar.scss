@@ -1,9 +1,60 @@
-.container_navbar{
-    display:flex;
-    align-items:center;
-    flex-direction: row;
-    justify-content: space-between;
-    width:80%;
-    padding:0 10%;
-    height:7vh;
+@import "../../sass/variables";
+
+.container_navbar {
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 80%;
+   padding: 0 10%;
+   height: 7vh;
+}
+.logo {
+   font-size: 1.5rem;
+   height: 1.5rem;
+   font-weight: 700;
+   background: $linear-gradient;
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+   text-shadow: $simple-shadow;
+}
+.menu {
+   position: absolute;
+   width: 95%;
+   height: 100%;
+   background-color: rgba(34, 34, 34, 0.952);
+   border-right: 2px solid white;
+   display: flex;
+   flex-direction: column;
+   backdrop-filter: blur(4px);
+   .menu_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10%;
+      height: 7vh;
+      color: white;
+   }
+   .options_menu {
+      padding: 0 10%;
+      margin: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .option_menu {
+         font-size: 2rem;
+         height: 2rem;
+         font-weight: 600;
+         background: $linear-gradient;
+         -webkit-text-fill-color: transparent;
+         -webkit-background-clip: text;
+         text-shadow: $simple-shadow;
+      }
+   }
+}
+.menu.close {
+   transform: translateX(-100%);
+}
+.menu.open {
+   box-shadow: 10px 10px 1rem 0.5rem #00000054;
 }
