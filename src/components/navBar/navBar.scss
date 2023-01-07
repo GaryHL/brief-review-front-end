@@ -8,6 +8,7 @@
    width: 80%;
    padding: 0 10%;
    height: 7vh;
+   position:absolute;
 }
 .logo {
    font-size: 1.5rem;
@@ -27,6 +28,7 @@
    display: flex;
    flex-direction: column;
    backdrop-filter: blur(4px);
+   z-index:10;
    .menu_header {
       display: flex;
       align-items: center;
@@ -49,6 +51,12 @@
          -webkit-text-fill-color: transparent;
          -webkit-background-clip: text;
          text-shadow: $simple-shadow;
+      }
+      .logout{
+         &:hover{
+            scale:1.02;
+            cursor:pointer;
+         }
       }
    }
 }
