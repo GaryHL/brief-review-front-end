@@ -1,0 +1,52 @@
+@import '../../sass/variables';
+
+.container_post {
+   width: 90%;
+   padding: 1rem 5%;
+   margin: 2rem 0;
+   border: 2px solid white;
+   border-radius: 15px;
+   box-shadow: $simple-shadow;
+
+   .container_info_post {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: 10% 85%;
+      height: 2rem;
+      align-items: center;
+      .img_user {
+         height: 2rem;
+         width: 2rem;
+         object-fit: cover;
+         border-radius: 999px;
+      }
+      .name_date {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+
+         .creator {
+            color: white;
+         }
+         .date {
+            font-size: 0.6rem;
+            opacity: 0.5;
+         }
+      }
+   }
+   .description_post {
+      font-size: 1rem;
+      padding: 1rem 0;
+      overflow: scroll;
+      overflow: hidden;
+      overflow-wrap: break-word;
+      max-width: 100%;
+   }
+   .img_post {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+      box-shadow: $simple-shadow;
+   }
+}
