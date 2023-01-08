@@ -14,7 +14,7 @@ function App() {
       config.headers.Authorization = token ? `Bearer ${token}` : '';
       return config;
    })
-   // axios.defaults.withCredentials = true;
+   axios.defaults.withCredentials = true;
 
    return (
       <div className="App">

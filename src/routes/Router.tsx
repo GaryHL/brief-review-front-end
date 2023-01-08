@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Register from "../views/auth/register/Register";
 import Login from "../views/auth/login/Login";
 import Home from "../views/home/Home";
+import Profile from "../views/profile/Profile";
 
 const Router = () => {
    return (
@@ -14,7 +15,7 @@ const Router = () => {
                element={
                   localStorage.getItem("auth_token") ? (
                      <Navigate to="/login" />
-                     ) : (
+                  ) : (
                      <Home />
                   )
                }
@@ -47,6 +48,16 @@ const Router = () => {
                      <Navigate to="/" />
                   ) : (
                      <Register />
+                  )
+               }
+            />
+            <Route
+               path="/profile"
+               element={
+                  localStorage.getItem("auth_token") ? (
+                     <Profile />
+                  ) : (
+                     <Navigate to="/login" />
                   )
                }
             />
