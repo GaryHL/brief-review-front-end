@@ -1,0 +1,23 @@
+.container_home {
+   width: 90%;
+   padding: 15vh 5% 0 5%;
+   min-height: 85vh;
+   background-color: #222;
+   color: white;
+   display: grid;
+//    grid-template-columns: repeat(3, minmax(100px, 1fr));
+   // grid-template-columns: 1fr  minmax(100px, 1fr)  1fr ;
+   grid-template-columns: 20% 55% 20% ;
+   grid-gap: 2rem;
+}
+@media (max-width: 900px) {
+   .container_home {
+      grid-template-columns: 100%;
+      >:first-child{
+        display: none;
+      }
+      >:last-child{
+        display: none;
+      }
+   }
+}
