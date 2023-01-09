@@ -31,10 +31,12 @@
             color: white;
             width: 85%;
             height: 100%;
-            &focus {
+            &:focus {
                border: none;
+               outline: none;
+               scale:1.03;
             }
-            &active {
+            &:active {
                border: none;
             }
          }
@@ -48,6 +50,9 @@
          background: $linear-gradient;
          box-shadow: $simple-shadow;
          border: none;
+         &:hover{
+            scale:1.05;
+         }
       }
    }
    .line {

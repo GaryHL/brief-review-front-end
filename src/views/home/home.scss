@@ -6,7 +6,8 @@
    color: white;
    display: grid;
 //    grid-template-columns: repeat(3, minmax(100px, 1fr));
-   grid-template-columns: 1fr  minmax(100px, 1fr)  1fr ;
+   // grid-template-columns: 1fr  minmax(100px, 1fr)  1fr ;
+   grid-template-columns: 20% 55% 20% ;
    grid-gap: 2rem;
 }
 @media (max-width: 900px) {
