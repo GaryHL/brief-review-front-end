@@ -1,17 +1,16 @@
 @import "../../../sass/variables";
 
-.container_login {
+.container_register {
    justify-items: center;
-   width: 80%;
+      width: 80%;
    padding: 0 10%;
    height: 100vh;
    display: grid;
    background-color: $color-black;
-   grid-template-rows: 30% 50%;
    > h1 {
       font-size: 2.5rem;
-      height:2.7rem;
       font-weight: 700;
+      height:2.7rem;
       background: $linear-gradient;
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
@@ -19,13 +18,13 @@
       align-self: center;
       text-shadow: $simple-shadow;
    }
-   > p {
-      color: $color-white;
+   >p {
+      color:$color-white;
    }
    .link{
-      color:white;
-      margin:1rem 0;
+      color:white;      margin:1rem 0;
    }
+
 
    .container_social {
       width: 100%;

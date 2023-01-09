@@ -1,6 +1,6 @@
 @import "../../sass/variables";
 
-.container_form_login {
+.container_form {
    width: 100%;
    height: 100%;
    display: flex;
@@ -49,8 +49,7 @@
          color: $color-black;
          background: $linear-gradient;
          box-shadow: $simple-shadow;
-         border:none;
-         cursor:pointer;
+         border: none;
          &:hover{
             scale:1.05;
          }
